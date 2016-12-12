@@ -1,0 +1,30 @@
+<html>
+  <head>
+
+  </head>
+
+  <body>
+    <div id="exercise">
+      <!-- fill the p below with your name and age using Interpolation -->
+      <p>Vue Js is pretty cool - {{ name }} ({{age}})</p>
+      <!-- output your age multiplied by 3 -->
+      <p>{{ age3() }}</p>
+      <!-- random number between 0 - 1 -->
+      <p>{{ randomNum() }}</p>
+
+      <!-- search any image on google and bind its src -->
+      <div>
+            <img v-bind:src="link" alt="">
+      </div>
+
+      <!-- pre-populate this input with your name -->
+      <div>
+        <input type="text" v-bind:value='name'>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src='https://unpkg.com/vue/dist/vue.js'></script>
+    <script type="text/javascript" src='app.js'></script>
+  </body>
+</html>
