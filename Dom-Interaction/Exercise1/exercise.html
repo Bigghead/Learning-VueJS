@@ -4,22 +4,19 @@
   </head>
 
   <body>
-    <div id="exercise">
-      <!-- fill the p below with your name and age using Interpolation -->
-      <p>Vue Js is pretty cool - {{ name }} ({{age}})</p>
-      <!-- output your age multiplied by 3 -->
-      <p>{{ age3() }}</p>
-      <!-- random number between 0 - 1 -->
-      <p>{{ randomNum() }}</p>
 
-      <!-- search any image on google and bind its src -->
-      <div>
-            <img v-bind:src="link" alt="">
-      </div>
 
-      <!-- pre-populate this input with your name -->
-      <div>
-        <input type="text" v-bind:value='name'>
+      <div id="app">
+        <button v-on:click='count(3)'>Click Me</button>
+        <button v-on:click='alert()'>Show Alert</button>
+        <p> Button was clicked {{ counter }} times</p>
+        <hr>
+        <p v-on:mousemove='updateCoor'>Coordinates: X = {{ x }}, Y = {{ y }}</p>
+
+        <div>
+          <input v-on:input='changeVal'type="text">
+          <p>{{ value }}</p>
+        </div>
       </div>
 
     </div>

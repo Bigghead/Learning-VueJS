@@ -1,17 +1,25 @@
-new Vue({
-  el: '#exercise',
-  data: {
-    name : 'Dodo',
-    age : 7,
-    link: 'http://cdn1-www.dogtime.com/assets/uploads/gallery/shiba-inu-dog-breed-picutres/7-senior.jpg'
-  },
 
+new Vue({
+  el: '#app',
+  data:{
+    counter : 0,
+    x : 0,
+    y : 0,
+    value :''
+  },
   methods:{
-    age3 : function(){
-      return this.age * 3;
+    count: function(number){
+      this.counter += number;
     },
-    randomNum : function(){
-      return Math.random();
+    updateCoor: function(event){
+      this.x = event.clientX;
+      this.y = event.clientY;
+    },
+    alert: function(){
+      alert('I was clicked');
+    },
+    changeVal : function(event){
+      this.value = event.target.value;
     }
   }
-})
+});
