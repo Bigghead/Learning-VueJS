@@ -1,6 +1,7 @@
 function random (){
   return Math.floor(Math.random()* 11);
 }
+
 new Vue({
   el: '#app',
   data: {
@@ -14,6 +15,14 @@ new Vue({
     gameStart: false
   },
   methods:{
+
+    newGame: function(){
+      this.gameStart = false;
+      this.gameOver = true;
+      this.playerHealth = 100,
+      this.monsterHealth = 100;
+
+    },
 
         healing: function(){
           this.heal = true;
@@ -37,10 +46,9 @@ new Vue({
       this.monDamage += num2;
       this.monsterHealth -= num2;
       this.gameStart = true;
-      if(this.playerHealth <= 0 || this.monsterHealth <= 0){
-        this.gameOver = true;
-        this.playerHealth = 100,
-        this.monsterHealth = 100;
+      if(this.playerHealth <= 0 || this.monsterHealth <= 0 ){
+        alert('New Game?');
+        newgame();
       }
     }
 
