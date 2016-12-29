@@ -13,13 +13,13 @@
         <div class='col-lg-6 text-center'>
           <h1>You</h1>
           <h2>Health : {{ playerHealth }}</h2>
-          <div class='well'></div>
+          <div class='well' v-bind:style='{width: playerHealth +"%"}'></div>
         </div>
 
         <div class='col-lg-6 text-center'>
           <h1>Monster</h1>
           <h2>Health : {{ monsterHealth }}</h2>
-          <div class="well"></div>
+          <div class="well" v-bind:style='{width: monsterHealth +"%"}'></div>
         </div>
       </div>
 

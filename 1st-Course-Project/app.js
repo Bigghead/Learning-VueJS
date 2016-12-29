@@ -48,7 +48,7 @@ new Vue({
       this.gameStart = true;
       if(this.playerHealth <= 0 || this.monsterHealth <= 0 ){
         alert('New Game?');
-        newgame();
+        this.newGame();
       }
     }
 
