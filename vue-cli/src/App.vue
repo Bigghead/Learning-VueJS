@@ -4,7 +4,7 @@
 
   <app-header></app-header>
   <mid-content></mid-content>
-  <app-footer></app-footer>
+  <app-footer></app-components/footer>
 
 
 </div>
@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import Header from './Header.vue'
-import MidContent from './MidContent.vue'
-import Footer from './Footer.vue'
+import Header from './components/Header.vue'
+import MidContent from './components/MidContent.vue'
+import Footer from './components/Footer.vue'
   export default{
     components: {
       'app-header': Header,
