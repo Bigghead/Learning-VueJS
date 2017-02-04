@@ -1,0 +1,36 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="main.css">
+  <script type="text/javascript" src='https://unpkg.com/vue/dist/vue.js'></script>
+
+  </head>
+
+  <body>
+  <div id="exercise">
+  <p v-if='show'>You can see me!</p>
+  <p v-else>Now you see me</p>
+  <p>Do you also see me?</p>
+  <h1>{{ show }}</h1>
+  <button @click='show = !show'>Switch</button>
+
+  <template>
+    <ul>
+      <li v-for='person in people'> {{ person }}
+        <span v-for='(value, key) in person'>{{ key }}: {{value}}</span>
+      </li>
+    </ul>
+    <button v-on:click='ingredients.push(ingredients[Math.floor(Math.random() * ingredients.length)])'>Add Random Item</button>
+  </template>
+
+  <hr>
+  <template>
+    <ul>
+      <li v-for='item in ingredients'>{{ item }}</li>
+    </ul>
+  </template>
+
+  </div>
+
+    <script type="text/javascript" src='app.js'></script>
+  </body>
+</html>

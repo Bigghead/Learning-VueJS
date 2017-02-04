@@ -1,0 +1,19 @@
+{
+  "name": "vuejs",
+  "version": "1.0.0",
+  "description": "A whole bunch of basic applications created using Vue.JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bigghead/Learning-VueJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bigghead/Learning-VueJS/issues"
+  },
+  "homepage": "https://github.com/Bigghead/Learning-VueJS#readme"
+}

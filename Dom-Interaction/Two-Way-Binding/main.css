@@ -1,0 +1,24 @@
+
+#demo{
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  background: steelblue;
+  display: inline-block
+}
+
+.shrink{
+  width:
+}
+
+.red{
+  background: red;
+}
+
+.green{
+  background: green;
+}
+
+.blue{
+  background: blue;
+}
